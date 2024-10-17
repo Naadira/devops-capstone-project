@@ -15,6 +15,12 @@ public class DemoApplication {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello, DevOps World from Spring Boot!";
+        return "Hello, DevOps World from Spring Boot!<br>" +
+           "This application demonstrates a simple Spring Boot setup.<br>" +
+           "Application: Demo Application<br>" +
+           "Version: 1.0.0<br>" +
+           "Deployed on: AWS EC2 Instance<br>" +
+           "Current environment: Production<br>" +
+           "Build status: Successful";
     }
 }
