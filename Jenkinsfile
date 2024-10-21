@@ -48,7 +48,7 @@ pipeline {
                         docker pull naadira/spring-boot-demo:latest && 
                         docker stop spring-boot-demo || true && 
                         docker rm spring-boot-demo || true && 
-                        docker run -d --name spring-boot-demo -p 8989:8000 naadira/spring-boot-demo:latest"
+                        docker run -d --name spring-boot-demo -p 9090:9090 naadira/spring-boot-demo:latest"
                     '''
                 }
             }
