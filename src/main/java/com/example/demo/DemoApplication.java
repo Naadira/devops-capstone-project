@@ -19,6 +19,6 @@ public class DemoApplication {
            "This application demonstrates a simple Spring Boot setup.<br>" +
            "Application: Demo Application<br>" +
            "Deployed on: AWS EC2 Instance<br>" +
-           "Build status: Successful";
+           "Build status: Successfully build";
     }
 }
