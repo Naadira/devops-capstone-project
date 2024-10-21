@@ -45,9 +45,9 @@ pipeline {
 
         stage('Deploy to EC2') {
             steps {
-                sshagent(['ec2-ssh-key_1']) {
+                sshagent(['ec2-ssh-key_2']) {
                     sh '''
-                    ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-128-182-162.us-east-2.compute.amazonaws.com "
+                    ssh -o StrictHostKeyChecking=no ec2-user@ec2-13-59-239-221.us-east-2.compute.amazonaws.com "
                         docker pull naadira/spring-boot-demo:latest && 
                         docker stop spring-boot-demo || true && 
                         docker rm spring-boot-demo || true && 
